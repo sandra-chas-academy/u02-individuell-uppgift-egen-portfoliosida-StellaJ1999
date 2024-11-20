@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+    color: #666666;
+}
+
+p {
+    color: #666666;
+}
+
+/* Header */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top img {
+    padding: 1rem;
+    width: 4rem;
+}
+
+/* Nav */
+
+.grey-nav-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 16vw;
+}
+
+.grey-nav-social-media img{
+    width: 2rem;
+}
+
+.stellaj-logo {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 174, 74), #ff8c72, rgb(255, 167, 181)); /* Gradient from left to right */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 0.8rem;
+    padding-top: 1rem;
+}
+
+.stellaj-logo, h3 {
+    font-weight: bold;
+}
+
+/* Footer */
+
+small > span {
+    background: linear-gradient(to right, rgb(255, 186, 101), #ff7f62, rgb(255, 111, 135));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+small {
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: auto;
+}
+
+@media(min-width: 600px) {
+
+    
+    /* Header with Nav */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5vh;
+        margin-top: 6vh;
+        height: 11vh;
+    }
+
+
+    .stellaj-logo {
+        margin-left: 5vh;
+        font-size: 18px;
+    }
+
+    .top img {
+        display: none;
+    }
+
+    .nav-social-media {
+        display: none;
+    }
+
+    .grey-nav-social-media {
+        display: flex;
+        gap: 3vh;
+        margin-right: 8vh;
+    } 
+
+    .grey-nav-social-media img {
+        width: 1.6rem;
+    }
+
+}

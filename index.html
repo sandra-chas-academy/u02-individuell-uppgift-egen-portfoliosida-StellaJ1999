@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -18,26 +22,18 @@
                     <h5>stellaj</h5>
                 </a>
             </div>
-            <img src="./Img/menu.svg" alt="hamburger menu">
         </div>
         <!-- Nav -->
         <nav>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./techstack.html">Tech Stack</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                </ul>
-            </div>
             <div class="grey-nav-social-media">
-                <a href="#"><img src="./images/icons/linkedin.svg" alt="linkedin logo"></a>
-                <a href="#"><img src="./images/icons/github.svg" alt="github logo"></a>
+                <a href="" id="contact"><img class="contact" src="/images/contact.svg" alt="contact info"></a>
+                <a href="https://www.linkedin.com/in/stella-jakstrand-045943263/"><img src="./images/linkedin-grey.svg" alt="linkedin logo"></a>
+                <a href="https://github.com/StellaJ1999"><img src="./images/grey-github.svg" alt="github logo"></a>
             </div>
         </nav>
     </header>
 <!-- Main -->
-    <main class="home">
+    <section class="home">
         <div class="home-text">
             <h1>Hi,</h1>
             <h1>My Name is</h1>
@@ -45,9 +41,118 @@
             <h1>I build things for the web</h1>
         </div>
         <div class="profile-wrap">
-            <img src="Img/profile.jpg" alt="profile pic" class="profile-pic">
+            <img src="images/profile.jpg" alt="profile pic" class="profile-pic">
         </div>
-    </main>
+    </section>
+    <section class="about-me">
+        <h1>About Me</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+    <!-- Work Experience -->
+    <section class="work-experience">
+        <h1>Work Experience</h1>
+        <div class="work-container">
+            <!-- Work 1 -->
+            <h3 class="job-title" id="job-title-1">Junior Fullstack Developer</h3>
+            <article class="work-box">
+                <div class="specified-work">
+                    <div class="company-name">
+                        <p id="company-name"> Company name here</p>
+                    </div>
+                    <div class="location">
+                        <p id="location"> Stockholm</p>
+                    </div>
+                </div>
+                <div class="time-stamps">
+                    <p class="time">Fulltime</p>
+                    <div class="calendar">
+                        <p id="duration"> Sep 2021-Dec 2021</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Work 2 -->
+            <h3 class="job-title" id="job-title-2">Internship</h3>
+            <article class="work-box">
+                <div class="specified-work">
+                    <div class="company-name">
+                        <p id="company-name"> Company name here</p>
+                    </div>
+                    <div class="location">
+                        <p id="location"> Stockholm</p>
+                    </div>
+                </div>
+                <div class="time-stamps">
+                    <p class="time">Internship</p>
+                    <div class="calendar">
+                        <p id="duration"> Sep 2021-Dec 2021</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Work 3 -->
+            <h3 class="job-title" id="job-title-3 ">Internship</h3>
+            <article class="work-box">
+                <div class="specified-work">
+                    <div class="company-name">
+                        <p id="company-name"> Company name here</p>
+                    </div>
+                    <div class="location">
+                        <p id="location"> Stockholm</p>
+                    </div>
+                </div>
+                <div class="time-stamps">
+                    <p class="time">Internship</p>
+                    <div class="calendar">
+                        <p id="duration"> Sep 2021-Dec 2021</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <h1 class="projects-h1">Projects</h1>
+    <h3 class="projects-h3">Things I've built so far</h3>
+    <div class="project-container">
+            <article class="project-box">
+                <div class="project-text-box">
+                    <h2> Project title 1</h2>
+                    <p>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                    <p class="tech-text"><b>Tech Stack:</b> HTML/CSS, JavaScript</p>
+                    <div class="project-link">
+                        <div class="view-code">
+                            <img src="images/grey-github.svg" alt="github">
+                            <a href="https://github.com/StellaJ1999">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Project 2 -->
+            <article class="project-box">
+                <div class="project-text-box">
+                    <h2> Project title 2</h2>
+                    <p>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                    <p class="tech-text"><b>Tech Stack:</b> HTML/CSS, JavaScript</p>
+                    <div class="project-link">
+                        <div class="view-code">
+                            <img src="images/grey-github.svg" alt="github">
+                            <a href="https://github.com/StellaJ1999">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Project 3 -->
+            <article class="project-box">
+                <div class="project-text-box">
+                    <h2> Project title 3</h2>
+                    <p>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                    <p class="tech-text"><b>Tech Stack:</b> HTML/CSS, JavaScript</p>
+                    <div class="project-link">
+                        <div class="view-code">
+                            <img src="images/grey-github.svg" alt="github">
+                            <a href="https://github.com/StellaJ1999">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 <!-- Copyright -->
 <small>Designed and Coded by <span>Stella Jakstrand</span></small>
 </body>

@@ -1,0 +1,244 @@
+
+
+.profile-wrap {
+    width: 50%;
+    height: 50%;
+    background-image: linear-gradient(to top(blue, purple,pink));
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.profile-wrap::before {
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, rgb(255, 196, 129), rgb(255, 125, 86), rgb(252, 100, 100) 100%);
+    position: absolute;
+    z-index: -1;
+    padding: 50%;
+}
+
+.profile-pic {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 100%;
+}
+
+
+.stella {
+    background: linear-gradient(to right, rgb(255, 193, 101), rgb(255, 147, 101), rgb(255, 126, 117));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.home h1{
+    font-size: x-large;
+}
+
+.home-text {
+    padding: 1rem;
+    padding-top: 20vh;
+}
+
+.home-text h1 {
+    color: gainsboro;
+}
+
+/* About */
+
+
+.about {
+    width: 100%;
+}
+
+.about-me h1 {
+    padding:1rem 0rem 1rem 1rem;
+    font-size: 22px;
+    color: gainsboro;
+}
+
+.about-me p {
+    padding-left: 1rem;
+    font-size: 15px;
+}
+
+.about h3 {
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 1rem;
+}
+
+.work-experience h1 {
+    padding: 1rem;
+    color: gainsboro;
+}
+
+.work-box, .education-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 10px;
+    border-bottom: solid 2px #66666644;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.place {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vh;
+}
+
+.time-stamps {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+}
+
+.time-stamps img {
+    width: 1rem;
+    display: none;
+}
+
+.time-stamps {
+    gap: 2vh;
+}
+
+.time {
+    background-color: #D7FFE0;
+    text-align: center;
+    border-radius: 15px;
+    color: #018C0F;
+    width: 15vh;
+    padding: 0.5vh;
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-title {
+    padding-left: 1rem;
+}
+
+/* Projects */
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    border-radius: 28px;
+    box-shadow: 1vh 1vh 3vh 1vh rgb(4, 1, 24);
+}
+
+.projects-h1 {
+    font-size: 1.5rem;
+    padding: 3vh;
+    color: gainsboro;
+}
+
+.project-box h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.projects-h3 {
+    padding: 3vh;
+}
+
+.projects p {
+    margin-bottom: 1rem;
+}
+
+.projects a {
+    color: black;
+}
+
+.project-text-box {
+    padding: 1rem;
+}
+
+.project-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-code img {
+    width: 1.2rem;
+}
+
+.view-code a {
+    font-size: medium;
+    text-decoration: none;
+    color: #424242;
+}
+
+@media (min-width: 600px) {
+
+
+    .home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: auto;
+        margin: 5rem;
+    }
+
+    .profile-wrap {
+        width: 13rem;
+    }
+
+    .home-text {
+        padding: 0;
+    }
+    .home h1 {
+        font-size: xx-large;
+    }
+
+    /* About Page */
+
+    .about {
+        width: 55%;
+        padding-left: 3.5rem;
+    }
+
+    .about h1 {
+        color: #42446E;
+        font-size: xx-large;
+    }
+
+    .time-stamps img {
+        display: inline-block;
+    }
+
+    .specified-work,
+    .specified-education {
+        display: flex;
+        gap: 4vh;
+        text-align: left;
+    }
+
+   
+}

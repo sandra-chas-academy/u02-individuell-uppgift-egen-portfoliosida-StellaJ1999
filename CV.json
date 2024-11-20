@@ -1,0 +1,25 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "company-name": "Retail Staffing",
+            "job-title": "Shop assisstant",
+            "time": "Part-time",
+            "time-period":" Nov 2024 - Now "
+        },
+        {
+            "id": 2,
+            "company-name": "Inte Bara Post Bemanning",
+            "job-title": "Receptionist",
+            "time": "Fulltime",
+            "time-period": "May 2023 - Jun 2024"
+        },
+        {
+            "id": 3,
+            "company-name": "Makalösa Blommor",
+            "job-title": "Florist",
+            "time": "Part-time",
+            "time-period": "Oct 2022 - March 2023"
+        }
+    ]
+}
