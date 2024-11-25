@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    async function getJobs() {
+    async function getData() {
         try {
             const response = await fetch("CV.json");
     
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    async function displayJobTitle() {
+    async function displayJobs() {
         try {
-            const data = await getJobs();
+            const data = await getData();
     
             if (!data || !data.jobs) {
                 throw new Error("No jobs found in data");
@@ -47,14 +47,66 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
 
                 if (location[index]) {
-                    location[index].innerHTML = job.location;
+                    location[index].innerHTML = job.location
                 }
             });
         } catch (error) {
             console.log(error);
         }
-    }
+    };
 
-    displayJobTitle();
+    displayJobs();
+
+    async function displayEducation() {
+        try {
+            const data = await getData();
+    
+            if (!data || !data.schools) {
+                throw new Error("No schools found in data");
+            }
+    
+            const educationTitle = document.querySelectorAll(".education-title");
+            const educationCentre = document.querySelectorAll(".education-centre");
+            const type = document.querySelectorAll(".type");
+            const timePeriod = document.querySelectorAll(".duration");
+            const schoolLocation = document.querySelectorAll(".school-location")
+
+    
+            data.schools.forEach((school, index) => {
+                if (educationTitle[index]) {
+                    educationTitle[index].innerHTML = school.title;
+                }
+
+                if (educationCentre[index]) {
+                    educationCentre[index].innerHTML = school.school;
+                }
+
+                if (type[index]) {
+                    type[index].innerText = school.type;
+                }
+
+                if (timePeriod[index]) {
+                    timePeriod[index].innerText = school["time-period"];
+                }
+
+                if (schoolLocation[index]) {
+                    schoolLocation[index].innerHTML = school.location
+                }
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    displayEducation();
+
+    function contactModal() {
+
+        const contactInformation = document.getElementById("contact");
+        
+        addEventListener('click', () => {
+ 
+        });
+    };
 
 });

@@ -61,6 +61,16 @@
     color: gainsboro;
 }
 
+.education h1 {
+    color: gainsboro;
+    padding: 1rem;
+
+}
+
+.education-container h3 {
+    padding-left: 1rem;
+}
+
 .about-me p {
     padding-left: 1rem;
     font-size: 15px;
@@ -112,7 +122,8 @@
     gap: 2vh;
 }
 
-.time {
+.time,
+.type {
     background-color: #D7FFE0;
     text-align: center;
     border-radius: 15px;
@@ -132,7 +143,6 @@
 }
 
 /* Projects */
-
 .project-container {
     display: flex;
     flex-direction: column;
@@ -146,7 +156,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 70%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 1rem;
     border-radius: 28px;
@@ -241,5 +250,4 @@
         text-align: left;
     }
 
-   
 }
