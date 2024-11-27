@@ -205,6 +205,65 @@
     color: #424242;
 }
 
+#modal-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000000d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0,5s;
+    z-index: 10;
+}
+
+
+.contact-modal {
+    background-color: #080808f1;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid hsl(0, 0%, 31%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #979797;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    text-align: center;
+}
+
+.contact-modal h1 {
+    background: linear-gradient(to right, rgb(255, 193, 101), rgb(255, 147, 101), rgb(255, 126, 117));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.contact-modal h3 {
+    color: rgb(116, 116, 116);
+    padding-top: 0.3rem;
+}
+
+.contact {
+    cursor: pointer;
+}
+
 @media (min-width: 600px) {
 
 
@@ -249,5 +308,15 @@
         gap: 4vh;
         text-align: left;
     }
+
+    .contact-modal {
+    padding: 3rem;
+    }
+
+    .contact-modal h3 {
+        padding-top: 1rem;
+    }
+
+
 
 }

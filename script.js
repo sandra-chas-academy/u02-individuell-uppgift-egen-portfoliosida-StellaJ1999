@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    const modalBackground = document.querySelector("#modal-background"); 
+    const contactBtn = document.querySelector(".contact");
+    const profilePic = document.querySelector(".profile-pic");
+    const exitBtn = document.querySelector(".exit-btn");
+
     async function getData() {
         try {
             const response = await fetch("CV.json");
@@ -100,13 +106,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     displayEducation();
 
-    function contactModal() {
+    contactBtn.addEventListener('click', () => {
+        modalBackground.style.visibility = "visible";
+        modalBackground.style.opacity = "1";
+    
+    });
 
-        const contactInformation = document.getElementById("contact");
-        
-        addEventListener('click', () => {
- 
-        });
-    };
+    exitBtn.addEventListener('click', () =>{
+        modalBackground.style.visibility = "hidden";
+        modalBackground.style.opacity = "0";
+    });
 
+    console.log(profilePic);
 });
