@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Header -->
+        <div class="top">
+            <div class="stellaj-logo">
+                <a href="index.html">
+                    <h3>{003}</h3>
+                    <h5>stellaj</h5>
+                </a>
+            </div>
+        </div>
+        <!-- Nav -->
+        <nav>
+            <div class="grey-nav-social-media">
+                <!-- Contact Modal -->
+                <div id="modal-background">
+                    <div class="contact-modal">
+                        <h1>Get in touch</h1>
+                        <h3>Email: stellajak@gmail.com</h3>
+                        <h3>+46730101123</h3>
+                        <h4 class="exit-btn">X</h4>
+                    </div>
+                </div>
+                <img id="contact" class="contact" src="/images/contact.svg" alt="contact info">
+                <a href="https://www.linkedin.com/in/stella-jakstrand-045943263/"><img src="./images/linkedin-grey.svg" alt="linkedin logo"></a>
+                <a href="https://github.com/StellaJ1999"><img src="./images/grey-github.svg" alt="github logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- Main -->
+    <section class="home">
+        <div class="home-text">
+            <h1>Hi,</h1>
+            <h1>My Name is</h1>
+            <h1><span class="stella">Stella Jakstrand</span></h1>
+            <h1>I build things for the web</h1>
+        </div>
+        <div class="profile-wrap">
+            <img src="images/profile.jpg" alt="profile pic" class="profile-pic">
+        </div>
+    </section>
+    <section class="about-me">
+        <h1>About Me</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+    <!-- Work Experience -->
+    <section class="work-experience">
+        <h1>Work Experience</h1>
+        <div class="work-container">
+            <!-- Work 1 -->
+            <h3 class="job-title"></h3>
+            <article class="work-box">
+                <div class="specified-work">
+                    <p class="company-name"></p>
+                    <p class="location"></p>
+                </div>
+                <div class="time-stamps">
+                    <p class="time"></p>
+                    <div class="calendar">
+                        <p class="duration"></p>
+                    </div>
+                </div>
+            </article>
+            <!-- Work 2 -->
+            <h3 class="job-title"></h3>
+            <article class="work-box">
+                <div class="specified-work">
+                    <p class="company-name"></p>
+                    <p class="location"></p>
+                </div>
+                <div class="time-stamps">
+                    <p class="time"></p>
+                    <div class="calendar">
+                        <p class="duration"></p>
+                    </div>
+                </div>
+            </article>
+            <!-- Work 3 -->
+            <h3 class="job-title"></h3>
+            <article class="work-box">
+                <div class="specified-work">
+                    <p class="company-name"></p>
+                    <p class="location"></p>
+                </div>
+                <div class="time-stamps">
+                    <p class="time"></p>
+                    <div class="calendar">
+                        <p class="duration"></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="education">
+        <h1>Education</h1>
+        <div class="education-container">
+            <!-- Education 1-->
+            <h3 class="education-title"></h3>
+            <article class="education-box">
+                <div class="specified-education">
+                        <p class="education-centre"></p>
+                        <p class="school-location"></p>
+                </div>
+                <div class="time-stamps">
+                    <p class="type"></p>
+                    <p class="duration-for-education"></p>
+                </div>
+            </article>
+            <!-- Education 2 -->
+            <h3 class="education-title"></h3>
+            <article class="education-box">
+                <div class="specified-education">
+                        <p class="education-centre"> </p>
+                        <p class="school-location"></p>
+                </div>
+                <div class="time-stamps">
+                    <p class="type"></p>
+                    <p class="duration-for-education"></p>
+                </div>
+            </article>
+            <!-- Education 3 -->
+            <h3 class="education-title">Gymnasieexamen</h3>
+            <article class="education-box">
+                <div class="specified-education">
+                    <p class="education-centre"> Kulturama</p>
+                    <p class="school-location"> Stockholm</p>
+                </div>
+                <div class="time-stamps">
+                    <p class="type"></p>
+                    <p class="duration-for-education"></p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section>
+        <h1 class="projects-h1">Projects</h1>
+        <h3 class="projects-h3">Things I've built so far</h3>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <article class="project-box">
+                <div class="project-text-box">
+                    <h2>Knockout Game</h2>
+                    <p>A game where the player choses 6, 7, 8, or 9 as their knockout number and writes it in an input. The player rolls two dice att the same time. With every roll the game keeps score of the numbers of the two dice added together. The purpose of the game is to get as high score as possible before getting the knockout number that the player has chosen.</p>
+                    <p class="tech-text"><b>Tech Stack:</b> HTML/CSS, JavaScript</p>
+                    <div class="project-link">
+                        <div class="view-code">
+                            <img src="images/grey-github.svg" alt="github">
+                            <a href="https://github.com/StellaJ1999/Knockout-game">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+                <!-- Project 2 -->
+            <article class="project-box">
+                <div class="project-text-box">
+                    <h2>ATM-App</h2>
+                    <p>The app mimicing an ATM got two users (user1 and user2) and each got a password (password for each user is the same as the username). Both users balance starts out at 1000kr.</p>
+                    <p class="tech-text"><b>Tech Stack:</b> HTML/CSS, JavaScript</p>
+                    <div class="project-link">
+                        <div class="view-code">
+                            <img src="images/grey-github.svg" alt="github">
+                            <a href="https://github.com/StellaJ1999/ATM-app">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+                <!-- Project 3 -->
+            <article class="project-box">
+                <div class="project-text-box">
+                    <h2>Rock Paper Scissors</h2>
+                    <p>A simple game where you lay against the computer that randomizes rock paper or scissor. Rock wins over scissor. Paper wins over rock, and scissor wins over paper. Everytime someone wins a round they gain a point, first to 3 points wins.</p>
+                    <p class="tech-text"><b>Tech Stack:</b> HTML/CSS, JavaScript</p>
+                    <div class="project-link">
+                        <div class="view-code">
+                            <img src="images/grey-github.svg" alt="github">
+                            <a href="https://github.com/StellaJ1999/Rock-Paper-Scissors">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>  
+    <button id="back-to-top"><img src="/images/arrow-up.svg" alt="arrow pointing up"></button>
+<!-- Copyright -->
+<small>Designed and Coded by <span>Stella Jakstrand</span></small>
+</body>
+</html>

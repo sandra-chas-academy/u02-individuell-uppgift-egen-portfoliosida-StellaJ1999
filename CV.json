@@ -1,0 +1,56 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "company-name": "Retail Staffing",
+            "title": "Shop assisstant",
+            "time": "Part-time",
+            "time-period":" Nov 2024 - Now",
+            "location": "Stockholm"
+        },
+        {
+            "id": 2,
+            "company-name": "Inte Bara Post Bemanning",
+            "title": "Receptionist",
+            "time": "Fulltime",
+            "time-period": "May 2023 - Jun 2024",
+            "location": "Stockholm"
+        },
+        {
+            "id": 3,
+            "company-name": "Makalösa Blommor",
+            "title": "Florist",
+            "time": "Part-time",
+            "time-period": "Oct 2022 - March 2023",
+            "location": "Stockholm"
+        }
+    ],
+
+    "schools": [
+        {
+            "id": 1,
+            "title": "Aestethics program, Art and Design",
+            "type": "Gymnasium",
+            "school": "Kulturama",
+            "time-period": "Jun 2015 - Jun 2018",
+            "location": "Stockholm"
+
+        },
+        {
+            "id": 2,
+            "title": "Floristry",
+            "type": "Komvux",
+            "school": "St. Eriks Gymnasium",
+            "time-period": "Aug 2021 - Dec 2022",
+            "location":"Stockholm"
+        },
+        {
+            "id": 3,
+            "title": "Javascript Fullstack Developement",
+            "type": "Yrkeshögskola",
+            "school": "Chas Academy",
+            "time-period": "Sep 2024 - Jun 2026",
+            "location":"Stockholm"
+        }
+    ]
+}
