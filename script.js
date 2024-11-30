@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const profilePic = document.querySelector(".profile-pic");
     const exitBtn = document.querySelector(".exit-btn");
 
+
     async function getData() {
         try {
             const response = await fetch("CV.json");
@@ -29,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
     
             const jobTitle = document.querySelectorAll(".job-title");
-            const companyName = document.querySelectorAll("#company-name");
+            const companyName = document.querySelectorAll(".company-name");
             const time = document.querySelectorAll(".time");
-            const timePeriod = document.querySelectorAll("#duration");
+            const timePeriod = document.querySelectorAll(".duration");
             const location = document.querySelectorAll(".location")
 
     
@@ -74,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const educationTitle = document.querySelectorAll(".education-title");
             const educationCentre = document.querySelectorAll(".education-centre");
             const type = document.querySelectorAll(".type");
-            const timePeriod = document.querySelectorAll(".duration");
+            const timePeriod = document.querySelectorAll(".duration-for-education");
             const schoolLocation = document.querySelectorAll(".school-location")
 
     
@@ -129,6 +130,20 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+document.querySelectorAll('section').forEach(section => {
+    section.classList.add('hidden'); // Start hidden
+    observer.observe(section);
+});
+
 
 
 });
