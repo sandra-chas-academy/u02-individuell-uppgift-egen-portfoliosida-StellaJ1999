@@ -61,6 +61,9 @@ JSON, står för JavaScript Object Notation är ett dataformat bestående av obj
 # Vad är HTTP och varför bör man som frontendutvecklare ha kunskap om det och dess protokoll?
 HTTP, eller Hypertext Transfer Protocol, är ett grundläggande protokoll som styr hur data överförs mellan klienter (vanligtvis webbläsare) och servrar på internet. Det är det viktigaste kommunikationsprotokollet på webben och spelar en central roll i att möjliggöra datautbyte mellan användare och applikationer. För en frontendutvecklare är det viktigt att ha en god förståelse för HTTP eftersom det påverkar hur webbplatser och applikationer fungerar. En viktig del av HTTP är metoder som GET, POST, PUT och DELETE, vilka används för att hämta, skicka, uppdatera eller ta bort data från en server. Förståelsen av HTTP-statuskoder, som 200 (OK), 404 (sidan hittades inte) och 500 (serverfel), är också avgörande för att kunna felsöka problem. Ett annat relevant område är säkerhet och Cross-Origin Resource Sharing (CORS), som reglerar hur resurser delas mellan olika domäner. För frontendutvecklare är det särskilt viktigt att förstå detta när man arbetar med API:er från externa källor. Genom att ha kunskap om HTTP och dess protokoll kan frontendutvecklare optimera sina applikationer.
 
+# Netlify länk
+https://cerulean-brioche-cbc600.netlify.app/
+
 ## Kriterier för bedömning
 
 
